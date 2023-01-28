@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <header>
-<title>Referencia</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Referencia</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="app.js" defer></script>
 </header>
 <body>
 
@@ -25,63 +30,6 @@
 <p class="ref">As referencias irão aparecer em ordem alfabetica e numerica:</p>
 
 <p id="aparecer"></p>
-
-<script>
-const refe = [];
-
-const adulto = document.querySelector('.adulto').checked = false;
-const junior = document.querySelector('.junior').checked = false;
-
-document.addEventListener('keypress', function(e){
-       if(e.which == 13){
-          mostrarValor();
-       }
-    }, false);
-
-
-
-const shown = () => {
-	let userInput = document.getElementById("test").value;
-
-	if(userInput === ""){
-		alert("insira uma referencia!!!");
-	}
-	else{
-		refe.push(userInput)
-		clearInput();
-		localStorage.setItem('Referencias', JSON.stringify(refe));
-		mostrarRefe();
-	}
-		
-};
-
-
-const clearInput = () => {
-	let userInput = (document.getElementById("test").value = "");
-}
-
-
-
-const mostrarRefe = () => {
-	const storedRefe = JSON.parse(localStorage.getItem('Referencias'));	
-	
-	let text = "";
-		storedRefe.sort((a,b) => ("" + a).localeCompare(b, undefined, {numeric:true}));
-		let upper = storedRefe.map(e => e.toUpperCase())
-
-		upper.forEach(colocarOrdemAlfa);
-
-		document.getElementById("aparecer").innerHTML = text;
-
-		function colocarOrdemAlfa(item, index) {
-  		text += item + "<br>"; }
-	
-
-};
-
-
-
-</script>
 
 <style>
 
