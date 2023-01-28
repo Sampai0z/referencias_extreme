@@ -1,11 +1,11 @@
 const refe = [];
 
-const adulto = document.querySelector('.adulto').checked = false;
-const junior = document.querySelector('.junior').checked = false;
+// const adulto = document.querySelector('.adulto').checked = false;
+// const junior = document.querySelector('.junior').checked = false;
 
 document.addEventListener('keypress', function(e){
        if(e.which == 13){
-          mostrarValor();
+          shown();
        }
     }, false);
 
