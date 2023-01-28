@@ -1,4 +1,4 @@
-const refe = [];
+let refe = [];
 
 // const adulto = document.querySelector('.adulto').checked = false;
 // const junior = document.querySelector('.junior').checked = false;
@@ -50,3 +50,8 @@ const mostrarRefe = () => {
 
 };
 
+const del = () => {
+	refe = [];
+	let text = "";
+	document.getElementById("aparecer").innerHTML = text;
+};
