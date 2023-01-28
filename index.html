@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<header>
+<title>Referencia</title>
+</header>
+<body>
+
+<h1>Arrumando os Tenis</h1>
+<h2>Feito pela EQUIPA DE LEIRIA</h2>
+<h1 style="color:red;"> NÃO APAGAR ESTE ARQUIVO!!</h1>
+
+<label for="" class="ref"> Referencia: </label>
+<input id="test" type="text" />
+
+<button type="button" onclick="shown()">Inserir</button>
+
+</br>
+<!--
+</br>
+
+<label><input type="checkbox" value="" class="adulto">Adulto</label>
+<label><input type="checkbox" value="" class="junior">Junior</label>
+-->
+
+<p class="ref">As referencias irão aparecer em ordem alfabetica e numerica:</p>
+
+<p id="aparecer"></p>
+
+<script>
+const refe = [];
+
+const adulto = document.querySelector('.adulto').checked = false;
+const junior = document.querySelector('.junior').checked = false;
+
+document.addEventListener('keypress', function(e){
+       if(e.which == 13){
+          mostrarValor();
+       }
+    }, false);
+
+
+
+const shown = () => {
+	let userInput = document.getElementById("test").value;
+
+	if(userInput === ""){
+		alert("insira uma referencia!!!");
+	}
+	else{
+		refe.push(userInput)
+		clearInput();
+		localStorage.setItem('Referencias', JSON.stringify(refe));
+		mostrarRefe();
+	}
+		
+};
+
+
+const clearInput = () => {
+	let userInput = (document.getElementById("test").value = "");
+}
+
+
+
+const mostrarRefe = () => {
+	const storedRefe = JSON.parse(localStorage.getItem('Referencias'));	
+	
+	let text = "";
+		storedRefe.sort((a,b) => ("" + a).localeCompare(b, undefined, {numeric:true}));
+		let upper = storedRefe.map(e => e.toUpperCase())
+
+		upper.forEach(colocarOrdemAlfa);
+
+		document.getElementById("aparecer").innerHTML = text;
+
+		function colocarOrdemAlfa(item, index) {
+  		text += item + "<br>"; }
+	
+
+};
+
+
+
+</script>
+
+<style>
+
+button {
+	background-color: powderblue;
+	width:10%;
+	padding: 5px;
+
+}
+.ref {
+	font-size:35px;
+}
+
+input{
+	width: 200px;
+	padding: 3px;
+}
+
+</style>
+
+</body>
+</html>
