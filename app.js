@@ -1,57 +1,49 @@
-let refe = [];
 
-// const adulto = document.querySelector('.adulto').checked = false;
-// const junior = document.querySelector('.junior').checked = false;
+
+let refe = JSON.parse(localStorage.getItem('Referencias'));
 
 document.addEventListener('keypress', function(e){
-       if(e.which == 13){
+       if(e.which === 13){
           shown();
        }
     }, false);
 
 
-
 const shown = () => {
-	let userInput = document.getElementById("test").value;
+	let userInput = document.getElementById("test").value.trim();
 
-	if(userInput === ""){
-		alert("insira uma referencia!!!");
+	if(!userInput){
+		alert("Please enter a reference!");
 	}
 	else{
 		refe.push(userInput)
 		clearInput();
 		localStorage.setItem('Referencias', JSON.stringify(refe));
-		mostrarRefe();
+		displayReferences();
 	}
-		
 };
 
-
 const clearInput = () => {
-	let userInput = (document.getElementById("test").value = "");
-}
+	document.getElementById("test").value = "";
+};
 
+const displayReferences = () => {
+	const storedRefe = JSON.parse(localStorage.getItem('Referencias')) || [];
 
-
-const mostrarRefe = () => {
-	const storedRefe = JSON.parse(localStorage.getItem('Referencias'));	
-	
 	let text = "";
-		storedRefe.sort((a,b) => ("" + a).localeCompare(b, undefined, {numeric:true}));
-		let upper = storedRefe.map(e => e.toUpperCase())
+	console.log("referencias", storedRefe)
+	storedRefe.sort((a,b) => a.localeCompare(b));
+	let upper = storedRefe.map(e => e.toUpperCase());
 
-		upper.forEach(colocarOrdemAlfa);
+	upper.forEach((item) => {
+  		text += item + "<br>";
+	});
 
-		document.getElementById("aparecer").innerHTML = text;
-
-		function colocarOrdemAlfa(item, index) {
-  		text += item + "<br>"; }
-	
-
+	document.getElementById("aparecer").innerHTML = text;
 };
 
 const del = () => {
 	refe = [];
-	let text = "";
-	document.getElementById("aparecer").innerHTML = text;
+	localStorage.removeItem('Referencias');
+	document.getElementById("aparecer").innerHTML = "";
 };
