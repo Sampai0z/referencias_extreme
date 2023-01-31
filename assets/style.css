@@ -1,0 +1,14 @@
+button {
+	background-color: powderblue;
+	width:10%;
+	padding: 5px;
+
+}
+.ref {
+	font-size:35px;
+}
+
+input{
+	width: 200px;
+	padding: 3px;
+}
