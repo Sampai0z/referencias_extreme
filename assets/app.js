@@ -1,4 +1,6 @@
 let refe = [];
+let checkJunior = document.getElementById("junior");
+let checkBaby = document.getElementById("baby");
 
 document.addEventListener(
 	"keypress",
@@ -15,12 +17,24 @@ const shown = () => {
 
 	if (!userInput) {
 		alert("Please enter a reference!");
+	} else if (checkJunior.checked) {
+		user = userInput + " (junior)";
+		refe.push(user);
+		action();
+	} else if (checkBaby.checked) {
+		user = userInput + " (baby)";
+		refe.push(user);
+		action();
 	} else {
 		refe.push(userInput);
-		clearInput();
-		localStorage.setItem("Referencias", JSON.stringify(refe));
-		displayReferences();
+		action();
 	}
+};
+
+const action = () => {
+	clearInput();
+	localStorage.setItem("Referencias", JSON.stringify(refe));
+	displayReferences();
 };
 
 const clearInput = () => {
