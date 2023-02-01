@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html>
-<header>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Referencia</title>
-    <link rel="stylesheet" href="assets/styles.css" />
-    <script src="assets/app.js" defer></script>
-</header>
-<body>
+	<header>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Referencia</title>
+		<link rel="stylesheet" href="assets/style.css" />
+		<script src="assets/app.js" defer></script>
+		<link rel="shortcut icon" href="" type="image/x-icon" />
+	</header>
+	<body>
+		<section class="nav-bar">
+			<div>
+				<img src="assets/images/extreme.png" alt="" class="logo" />
+			</div>
+			<a
+				class="title"
+				href="https://www.extremefootwear.pt/pt/termos-e-condicoes"
+			>
+				50% em TUDO! | Lê aqui nossas condiçoes comerciais
+			</a>
+		</section>
 
-<h1>Arrumando os Tenis</h1>
-<h2>Feito pela EQUIPA DE LEIRIA</h2>
-<h1 style="color:red;"> NÃO APAGAR ESTE ARQUIVO!!</h1>
-
-<label for="" class="ref"> Referencia: </label>
-<input id="test" type="text" />
-
-<button type="button" onclick="shown()">Inserir</button>
-
-
-</br></br></br>
-<button type="button" onclick="del()">Limpar Lista</button>
-
-<!--
-</br>
-<label><input type="checkbox" value="" class="adulto">Adulto</label>
-<label><input type="checkbox" value="" class="junior">Junior</label>
--->
-
-<p class="ref">As referencias irão aparecer em ordem alfabetica e numerica:</p>
-
-<p id="aparecer"></p>
-</body>
+		<section>
+			<h1 class="second-title">Organizando os Tenis</h1>
+			<div class="section">
+				<article>
+					<p>
+						Adicione as referencias, para que elas apareçam em ordem alfabeptica
+					</p>
+				</article>
+			</div>
+			<div class="section-2">
+				<h3>Digite aqui a Referencia:</h3>
+				<input id="test" type="text" placeholder="Referencia" class="input" />
+				<button type="button" onclick="shown()" class="inserir">Inserir</button>
+				<button type="button" onclick="del()" class="delete">
+					Limpar Lista
+				</button>
+				<p class="ref">
+					As referencias irão aparecer em ordem alfabetica e numerica:
+				</p>
+				<br />
+				<br />
+				<p id="aparecer"></p>
+			</div>
+		</section>
+	</body>
 </html>

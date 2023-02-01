@@ -1,16 +1,5 @@
-let refe = JSON.parse(localStorage.getItem("Referencias"));
+let refe = [];
 
-window.onload = function () {
-	const storedRefe = JSON.parse(localStorage.getItem("Referencias")) || [];
-
-	let text = "";
-	storedRefe.sort((a, b) => a.localeCompare(b));
-	let upper = storedRefe.map((e) => e.toUpperCase());
-	upper.forEach((item) => {
-		text += item + "<br>";
-	});
-	document.getElementById("aparecer").innerHTML = text;
-};
 document.addEventListener(
 	"keypress",
 	function (e) {
@@ -58,3 +47,7 @@ const del = () => {
 	localStorage.removeItem("Referencias");
 	document.getElementById("aparecer").innerHTML = "";
 };
+
+window.addEventListener("DOMContentLoaded", (event) => {
+	displayReferences();
+});
