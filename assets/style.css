@@ -91,4 +91,11 @@ body{
 	color: black;
 	border: 1px solid;
 	cursor: pointer;
-}	
+}
+.remove_last{
+	margin-left: 10px;
+	color: red;
+	text-decoration: underline;
+	cursor: pointer;
+	user-select: none;
+}
