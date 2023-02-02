@@ -18,9 +18,10 @@ document.addEventListener(
 
 const shown = () => {
 	let userInput = document.getElementById("test").value.trim();
-
 	if (!userInput) {
 		alert("Please enter a reference!");
+	} else if (refe.includes(userInput)) {
+		alert("Essa referencia ja existe");
 	} else if (checkJunior.checked) {
 		user = userInput + " (junior)";
 		refe.push(user);
