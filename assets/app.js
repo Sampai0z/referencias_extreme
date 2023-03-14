@@ -19,7 +19,7 @@ document.addEventListener(
 const shown = () => {
 	let userInput = document.getElementById("test").value.trim();
 	if (!userInput) {
-		alert("Please enter a reference!");
+		alert("Por favor insira uma referencia!");
 	} else if (refe.includes(userInput)) {
 		alert("Essa referencia ja existe");
 	} else if (checkJunior.checked) {
