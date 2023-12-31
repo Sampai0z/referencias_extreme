@@ -10,7 +10,8 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fecho</title>
-    <script src="assets/app.js" defer></script>
+    <!-- <script src="assets/app.js" defer></script> -->
+    <script src="assets/fecho.js" defer></script>
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
@@ -29,46 +30,140 @@
       <a class="sub_title" href="index.html"> Organizar as referencias </a>
     </section>
 
-    <section>
+    <section class="todo">
       <h1 class="second-title">Calcule o numerario do fecho!</h1>
-      <div class="section">
-        <article>
-          <p>insira a quantidade de moedas</p>
-        </article>
+      <h3>Digite aqui a quantidade do numerario:</h3>
+      <div class="fecho">
+        <div class="section-fecho">
+          <br />
+          <h3>MOEDAS:</h3>
+          <input
+            id="test"
+            type="number"
+            placeholder="1 centimo"
+            class="coin_input"
+          />
+          <input
+            id="test"
+            type="number"
+            placeholder="2 centimos"
+            class="coin_input"
+          />
+          <input
+            id="test"
+            type="number"
+            placeholder="5 centimos"
+            class="coin_input"
+          />
+          <input
+            id="test"
+            type="number"
+            placeholder="10 centimos"
+            class="coin_input"
+          />
+          <input
+            id="test"
+            type="number"
+            placeholder="20 centimos"
+            class="coin_input"
+          />
+          <input
+            id="test"
+            type="number"
+            placeholder="50 centimos"
+            class="coin_input"
+          />
+          <input
+            id="test"
+            type="number"
+            placeholder="1 Euro"
+            class="coin_input"
+          />
+          <input
+            id="test"
+            type="number"
+            placeholder="2 Euros"
+            class="coin_input"
+          />
+          <!-- <button type="button" onclick="shown()" class="inserir">Inserir</button>
+          <button type="button" onclick="del()" class="delete">
+            Limpar Lista
+          </button> -->
+          <!-- 
+          <div>
+            <label>
+              <input type="checkbox" name="junior" id="junior" />
+              <span>Junior</span>
+            </label>
+  
+            <label>
+              <input type="checkbox" name="baby" id="baby" />
+              <span>Baby</span>
+            </label>
+          </div> -->
+        </div>
+        <div class="section-fecho">
+          <br />
+          <h3>NOTAS:</h3>
+          <input
+            id="test"
+            type="number"
+            placeholder="5 Euros"
+            class="coin_input"
+          />
+          <input
+            id="test"
+            type="number"
+            placeholder="10 Euros"
+            class="coin_input"
+          />
+          <input
+            id="test"
+            type="number"
+            placeholder="20 Euros"
+            class="coin_input"
+          />
+          <input
+            id="test"
+            type="number"
+            placeholder="50 Euros"
+            class="coin_input"
+          />
+          <input
+            id="test"
+            type="number"
+            placeholder="100 Euros"
+            class="coin_input"
+          />
+          <input
+            id="test"
+            type="number"
+            placeholder="200 Euros"
+            class="coin_input"
+          />
+          <!-- <button type="button" onclick="shown()" class="inserir">Inserir</button>
+          <button type="button" onclick="del()" class="delete">
+            Limpar Lista
+          </button> -->
+          <!-- 
+          <div>
+            <label>
+              <input type="checkbox" name="junior" id="junior" />
+              <span>Junior</span>
+            </label>
+  
+            <label>
+              <input type="checkbox" name="baby" id="baby" />
+              <span>Baby</span>
+            </label>
+          </div> -->
+        </div>
       </div>
-      <!-- <div class="section-2">
-        <h3>Digite aqui a Referencia:</h3>
-        <input id="test" type="text" placeholder="Referencia" class="input" />
-        <button type="button" onclick="shown()" class="inserir">Inserir</button>
-        <button type="button" onclick="del()" class="delete">
-          Limpar Lista
-        </button>
 
-        <div>
-          <label>
-            <input type="checkbox" name="junior" id="junior" />
-            <span>Junior</span>
-          </label>
-
-          <label>
-            <input type="checkbox" name="baby" id="baby" />
-            <span>Baby</span>
-          </label>
-        </div>
-
-        <p class="ref">
-          As referencias irão aparecer em ordem alfabetica e numerica:
-        </p>
+      <section>
         <br />
-        <div>
-          <p onclick="removeLast()" class="remove_last" id="del_last">
-            Remover ultima da lista
-          </p>
-        </div>
-        <br />
-        <p id="antes"></p>
-        <p id="aparecer"></p>
-      </div> -->
+        <h4>TOTAL:</h4>
+      </section>
     </section>
   </body>
 </html>

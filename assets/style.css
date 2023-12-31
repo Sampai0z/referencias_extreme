@@ -60,6 +60,7 @@ body {
   justify-items: center;
   margin-top: 10px;
 }
+
 .section-2 {
   margin: 20px;
   /* margin-left: 10px; */
@@ -114,4 +115,33 @@ body {
   text-decoration: underline;
   cursor: pointer;
   user-select: none;
+}
+
+/* ---------------------------------------- */
+.todo {
+  padding-left: 100px;
+}
+.section-fecho {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+}
+.fecho {
+  display: flex;
+  gap: 200px;
+  width: 200px;
+}
+.coin_input {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid rgb(68, 68, 68);
+  border-radius: 3px;
+}
+.coin_input:hover {
+  padding: 5px;
+  margin: 5px;
+}
+.coin_input:focus {
+  outline: none;
 }
