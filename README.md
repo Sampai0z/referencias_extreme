@@ -3,7 +3,7 @@ Site criado com o intuito de ajudar a resolver tarefas na loja, como por exemplo
 Nenhum comprovativo de dados, pagamentos ou valor que é feito na loja será ou é salvo na pagina ou em nenhum outro lugar, é apenas uma "calculadora" para os lojistas calcularem o valor total do dia de forma mais prática.
 
 Site para uso pessoal e treino, não é o site oficial da loja! É apenas um projeto.
-link para o site:
+link para o site: https://extreme-footwear.netlify.app
 
 Qualquer duvida entrar em contacto.
 
@@ -15,6 +15,6 @@ No proof of data, payments, or values conducted in the store will be saved on th
 
 This site is for personal use and practice; it is not the official website of the store. It is merely a project.
 
-Link to the website:
+Link to the website: https://extreme-footwear.netlify.app
 
 For any inquiries, please feel free to contact us.
