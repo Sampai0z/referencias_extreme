@@ -101,37 +101,43 @@
             id="notas"
             type="number"
             placeholder="5 Euros"
-            class="coin_input"
+            data-valor="5.00"
+            class="notas_input"
           />
           <input
             id="notas"
             type="number"
             placeholder="10 Euros"
-            class="coin_input"
+            data-valor="10.00"
+            class="notas_input"
           />
           <input
             id="notas"
             type="number"
             placeholder="20 Euros"
-            class="coin_input"
+            data-valor="20.00"
+            class="notas_input"
           />
           <input
             id="notas"
             type="number"
             placeholder="50 Euros"
-            class="coin_input"
+            data-valor="50.00"
+            class="notas_input"
           />
           <input
             id="notas"
             type="number"
             placeholder="100 Euros"
-            class="coin_input"
+            data-valor="100.00"
+            class="notas_input"
           />
           <input
             id="notas"
             type="number"
             placeholder="200 Euros"
-            class="coin_input"
+            data-valor="200.00"
+            class="notas_input"
           />
         </div>
       </div>
@@ -140,10 +146,16 @@
         <button type="button" onclick="calcular()" class="delete">
           Calcular
         </button>
-        <button type="button" onclick="limpar()" class="delete">Limpar</button>
+        <button type="button" onclick="limparInput()" class="delete">
+          Limpar moedas
+        </button>
+        <br />
+        <button type="button" onclick="limpar()" class="delete">
+          Limpar Tudo
+        </button>
         <br />
         <br />
-        <h4>TOTAL: $<span id="total"></span></h4>
+        <h4>TOTAL: $<span id="total">0.00</span></h4>
       </section>
     </section>
   </body>
