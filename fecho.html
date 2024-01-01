@@ -38,131 +38,112 @@
           <br />
           <h3>MOEDAS:</h3>
           <input
-            id="test"
+            id="moedas"
             type="number"
             placeholder="1 centimo"
+            data-valor="0.01"
             class="coin_input"
           />
           <input
-            id="test"
+            id="moedas"
             type="number"
             placeholder="2 centimos"
+            data-valor="0.02"
             class="coin_input"
           />
           <input
-            id="test"
+            id="moedas"
             type="number"
             placeholder="5 centimos"
+            data-valor="0.5"
             class="coin_input"
           />
           <input
-            id="test"
+            id="moedas"
             type="number"
             placeholder="10 centimos"
+            data-valor="0.10"
             class="coin_input"
           />
           <input
-            id="test"
+            id="moedas"
             type="number"
             placeholder="20 centimos"
+            data-valor="0.20"
             class="coin_input"
           />
           <input
-            id="test"
+            id="moedas"
             type="number"
             placeholder="50 centimos"
+            data-valor="0.50"
             class="coin_input"
           />
           <input
-            id="test"
+            id="moedas"
             type="number"
             placeholder="1 Euro"
+            data-valor="1.00"
             class="coin_input"
           />
           <input
-            id="test"
+            id="moedas"
             type="number"
             placeholder="2 Euros"
+            data-valor="2.00"
             class="coin_input"
           />
-          <!-- <button type="button" onclick="shown()" class="inserir">Inserir</button>
-          <button type="button" onclick="del()" class="delete">
-            Limpar Lista
-          </button> -->
-          <!-- 
-          <div>
-            <label>
-              <input type="checkbox" name="junior" id="junior" />
-              <span>Junior</span>
-            </label>
-  
-            <label>
-              <input type="checkbox" name="baby" id="baby" />
-              <span>Baby</span>
-            </label>
-          </div> -->
         </div>
         <div class="section-fecho">
           <br />
           <h3>NOTAS:</h3>
           <input
-            id="test"
+            id="notas"
             type="number"
             placeholder="5 Euros"
             class="coin_input"
           />
           <input
-            id="test"
+            id="notas"
             type="number"
             placeholder="10 Euros"
             class="coin_input"
           />
           <input
-            id="test"
+            id="notas"
             type="number"
             placeholder="20 Euros"
             class="coin_input"
           />
           <input
-            id="test"
+            id="notas"
             type="number"
             placeholder="50 Euros"
             class="coin_input"
           />
           <input
-            id="test"
+            id="notas"
             type="number"
             placeholder="100 Euros"
             class="coin_input"
           />
           <input
-            id="test"
+            id="notas"
             type="number"
             placeholder="200 Euros"
             class="coin_input"
           />
-          <!-- <button type="button" onclick="shown()" class="inserir">Inserir</button>
-          <button type="button" onclick="del()" class="delete">
-            Limpar Lista
-          </button> -->
-          <!-- 
-          <div>
-            <label>
-              <input type="checkbox" name="junior" id="junior" />
-              <span>Junior</span>
-            </label>
-  
-            <label>
-              <input type="checkbox" name="baby" id="baby" />
-              <span>Baby</span>
-            </label>
-          </div> -->
         </div>
       </div>
-
       <section>
         <br />
-        <h4>TOTAL:</h4>
+        <button type="button" onclick="calcular()" class="delete">
+          Calcular
+        </button>
+        <button type="button" onclick="limpar()" class="delete">Limpar</button>
+        <br />
+        <br />
+        <h4>TOTAL: $<span id="total"></span></h4>
       </section>
     </section>
   </body>
