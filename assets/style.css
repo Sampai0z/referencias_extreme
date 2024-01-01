@@ -145,3 +145,19 @@ body {
 .coin_input:focus {
   outline: none;
 }
+
+.apagar {
+  padding: 6px 26px;
+  margin: 5px;
+  background-color: black;
+  color: white;
+  border: 1px solid;
+}
+.apagar:hover {
+  padding: 6px 26px;
+  margin: 5px;
+  background-color: rgb(255, 48, 48);
+  color: white;
+  border: 1px solid;
+  cursor: pointer;
+}
