@@ -161,3 +161,18 @@ body {
   border: 1px solid;
   cursor: pointer;
 }
+.fundo {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 10px;
+  padding-left: 10px;
+}
+/* Estilize o input para esconder as setas */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
