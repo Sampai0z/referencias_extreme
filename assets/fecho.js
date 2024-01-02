@@ -1,15 +1,12 @@
-// console.log("foi");
-
 const valorTotal = document.getElementById("total");
 const notas = document.querySelectorAll(".notas_input");
 const moedas = document.querySelectorAll(".coin_input");
 const totalFundo = document.getElementById("totalFundo");
+const valorfundoCaixa = document.getElementById("fundo");
 
 let total = 0;
 
 const calcular = () => {
-  const valorfundoCaixa = document.getElementById("fundo");
-
   moedas.forEach((moeda) => {
     let valorUnitario = parseFloat(moeda.getAttribute("data-valor")) || 0;
     let quantidade = parseFloat(moeda.value) || 0;
@@ -37,6 +34,7 @@ const limpar = () => {
 
   valorTotal.innerHTML = "0.00";
   totalFundo.innerHTML = "0.00";
+  total = 0;
 };
 
 const limparInput = () => {
@@ -46,9 +44,11 @@ const limparInput = () => {
   moedas.forEach((moeda) => {
     moeda.value = "";
   });
+  valorfundoCaixa.value = "";
 };
 
 const limparTotal = () => {
   valorTotal.innerHTML = "0.00";
   totalFundo.innerHTML = "0.00";
+  total = 0;
 };
