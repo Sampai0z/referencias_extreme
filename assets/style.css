@@ -132,18 +132,12 @@ body {
   gap: 200px;
   width: 200px;
 }
-.coin_input {
-  padding: 5px;
+.coin_input,
+.notas_input {
+  padding: 10px;
   margin: 5px;
   border: 1px solid rgb(68, 68, 68);
   border-radius: 3px;
-}
-.coin_input:hover {
-  padding: 5px;
-  margin: 5px;
-}
-.coin_input:focus {
-  outline: none;
 }
 
 .apagar {
