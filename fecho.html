@@ -42,14 +42,19 @@
     <section class="todo">
       <h1 class="second-title">Calcule o numerario do fecho!</h1>
       <h3>Digite aqui a quantidade de moedas e notas:</h3>
+      <p>Marque o checkbox caso queira desabilitar o campo selecionado.</p>
       <form class="fecho">
         <div class="section-fecho">
           <br />
           <h3>MOEDAS:</h3>
           <div class="input-check">
-            <input type="checkbox" />
             <input
-              id="moedas"
+              type="checkbox"
+              class="disableInput"
+              data-target-input="moeda-01"
+            />
+            <input
+              id="moeda-01"
               type="number"
               placeholder="1 centimo"
               data-valor="0.01"
@@ -57,9 +62,13 @@
             />
           </div>
           <div class="input-check">
-            <input type="checkbox" />
             <input
-              id="moedas"
+              type="checkbox"
+              class="disableInput"
+              data-target-input="moeda-02"
+            />
+            <input
+              id="moeda-02"
               type="number"
               placeholder="2 centimos"
               data-valor="0.02"
@@ -67,9 +76,13 @@
             />
           </div>
           <div class="input-check">
-            <input type="checkbox" />
             <input
-              id="moedas"
+              type="checkbox"
+              class="disableInput"
+              data-target-input="moeda-05"
+            />
+            <input
+              id="moeda-05"
               type="number"
               placeholder="5 centimos"
               data-valor="0.05"
@@ -77,9 +90,13 @@
             />
           </div>
           <div class="input-check">
-            <input type="checkbox" />
             <input
-              id="moedas"
+              type="checkbox"
+              class="disableInput"
+              data-target-input="moeda-10"
+            />
+            <input
+              id="moeda-10"
               type="number"
               placeholder="10 centimos"
               data-valor="0.10"
@@ -87,9 +104,13 @@
             />
           </div>
           <div class="input-check">
-            <input type="checkbox" />
             <input
-              id="moedas"
+              type="checkbox"
+              class="disableInput"
+              data-target-input="moeda-20"
+            />
+            <input
+              id="moeda-20"
               type="number"
               placeholder="20 centimos"
               data-valor="0.20"
@@ -97,9 +118,13 @@
             />
           </div>
           <div class="input-check">
-            <input type="checkbox" />
             <input
-              id="moedas"
+              type="checkbox"
+              class="disableInput"
+              data-target-input="moeda-50"
+            />
+            <input
+              id="moeda-50"
               type="number"
               placeholder="50 centimos"
               data-valor="0.50"
@@ -107,9 +132,13 @@
             />
           </div>
           <div class="input-check">
-            <input type="checkbox" />
             <input
-              id="moedas"
+              type="checkbox"
+              class="disableInput"
+              data-target-input="moeda-1"
+            />
+            <input
+              id="moeda-1"
               type="number"
               placeholder="1 Euro"
               data-valor="1.00"
@@ -117,9 +146,13 @@
             />
           </div>
           <div class="input-check">
-            <input type="checkbox" />
             <input
-              id="moedas"
+              type="checkbox"
+              class="disableInput"
+              data-target-input="moeda-2"
+            />
+            <input
+              id="moeda-2"
               type="number"
               placeholder="2 Euros"
               data-valor="2.00"
@@ -131,9 +164,13 @@
           <br />
           <h3>NOTAS:</h3>
           <div class="input-check">
-            <input type="checkbox" />
             <input
-              id="notas"
+              type="checkbox"
+              class="disableInput"
+              data-target-input="nota-05"
+            />
+            <input
+              id="nota-05"
               type="number"
               placeholder="5 Euros"
               data-valor="5.00"
@@ -141,9 +178,13 @@
             />
           </div>
           <div class="input-check">
-            <input type="checkbox" />
             <input
-              id="notas"
+              type="checkbox"
+              class="disableInput"
+              data-target-input="nota-10"
+            />
+            <input
+              id="nota-10"
               type="number"
               placeholder="10 Euros"
               data-valor="10.00"
@@ -151,9 +192,13 @@
             />
           </div>
           <div class="input-check">
-            <input type="checkbox" />
             <input
-              id="notas"
+              type="checkbox"
+              class="disableInput"
+              data-target-input="nota-20"
+            />
+            <input
+              id="nota-20"
               type="number"
               placeholder="20 Euros"
               data-valor="20.00"
@@ -161,9 +206,13 @@
             />
           </div>
           <div class="input-check">
-            <input type="checkbox" />
             <input
-              id="notas"
+              type="checkbox"
+              class="disableInput"
+              data-target-input="nota-50"
+            />
+            <input
+              id="nota-50"
               type="number"
               placeholder="50 Euros"
               data-valor="50.00"
@@ -171,9 +220,13 @@
             />
           </div>
           <div class="input-check">
-            <input type="checkbox" />
             <input
-              id="notas"
+              type="checkbox"
+              class="disableInput"
+              data-target-input="nota-100"
+            />
+            <input
+              id="nota-100"
               type="number"
               placeholder="100 Euros"
               data-valor="100.00"
@@ -181,12 +234,30 @@
             />
           </div>
           <div class="input-check">
-            <input type="checkbox" />
             <input
-              id="notas"
+              type="checkbox"
+              class="disableInput"
+              data-target-input="nota-200"
+            />
+            <input
+              id="nota-200"
               type="number"
               placeholder="200 Euros"
               data-valor="200.00"
+              class="notas_input"
+            />
+          </div>
+          <div class="input-check">
+            <input
+              type="checkbox"
+              class="disableInput"
+              data-target-input="nota-500"
+            />
+            <input
+              id="nota-500"
+              type="number"
+              placeholder="500 Euros"
+              data-valor="500.00"
               class="notas_input"
             />
           </div>
@@ -216,10 +287,10 @@
         <h4>TOTAL: €<span id="total">0.00</span></h4>
         <h4>total - fundo de caixa: €<span id="totalFundo">0.00</span></h4>
         <br />
-        <button type="button" onclick="limpar()" class="apagar">
+        <button type="button" onclick="apagarTudo()" class="apagar">
           Apagar tudo
         </button>
-        <button type="button" onclick="limparTotal()" class="apagar">
+        <button type="button" onclick="apagarTotal()" class="apagar">
           Apagar total
         </button>
       </section>
