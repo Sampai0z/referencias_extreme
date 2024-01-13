@@ -199,3 +199,7 @@ a {
   color: white;
   text-decoration: none;
 }
+
+.input-check {
+  display: flex;
+}
